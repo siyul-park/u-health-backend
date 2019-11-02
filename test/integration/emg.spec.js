@@ -81,9 +81,9 @@ describe('EMG', () => {
     const leaningData = [];
     const thresholdForExerciseStat = createRandomInteger(0, 1000);
 
-    emgSample.values.forEach((value) => {
+    emgSample.values.forEach((value) =>
       leaningData.push({ value, isExercise: value > thresholdForExerciseStat })
-    });
+    );
 
     emgService.doLearning(leaningData);
 
