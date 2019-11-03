@@ -20,6 +20,7 @@ make run
 ```bash
 git clone https://github.com/kdPark0723/u-health-backend
 cd u-health-backend
+npm install
 npm run
 ```
 
