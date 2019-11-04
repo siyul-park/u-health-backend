@@ -11,7 +11,6 @@ async function createEmg(req, res) {
 
   config.logger.log(`Request: add emg, exerciseTime is ${response.exerciseTime}`);
 
-
   res.status(201)
     .send(response);
 }

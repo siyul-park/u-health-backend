@@ -68,7 +68,7 @@ function createLogger(config) {
 
 const env = process.env.NODE_ENV || 'development';
 
-const commonConfig = require('./common');
+const commonConfig = Object.assign(require('./common'), {env});
 const currentConfig = require(`./${env}`);
 
 const config = assignConfig(commonConfig, currentConfig);

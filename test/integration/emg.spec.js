@@ -14,7 +14,8 @@ const createEmgSuccessScheme = Joi.object().keys({
       datetime: Joi.string().required()
     })
   }),
-  exerciseTime: Joi.number().required()
+  exerciseTime: Joi.number().required(),
+  monthlyPremium: Joi.number().required()
 });
 
 const getEmgSuccessScheme = Joi.object().keys({
